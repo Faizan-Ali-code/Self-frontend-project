@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progressBar {
+            height: 10px;
+            width: 500px;
+            margin: 20px;
+            background-color: #aaa;
+        }
+
+        .progressed {
+            height: 10px;
+            background-color: orange;
+            width: 30%;
+            transition: all 1s ease-in-out;
+            position: relative;
+        }
+        .progressed::after{
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(233, 31, 31);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="roar.mp3" id="music" controls></audio>
+    <div class="progressBar" id="progressBar">
+        <div class="progressed" id="progressed"></div>
+    </div>
+    <script>
+        const progressBar = document.getElementById("progressBar");
+        const progressed = document.getElementById("progressed");
+        const music = document.getElementById("music");
+
+        music.addEventListener("timeupdate", () => {
+            progressed.style.width = Math.floor(music.currentTime / music.duration * 100) + "%";
+        });
+
+
+        progressBar.addEventListener("click", (e) => {
+            music.currentTime = ((e.offsetX / progressBar.offsetWidth) * music.duration);
+        })
+
+
+    </script>
+</body>
+
+</html>

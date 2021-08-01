@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+  background-color: #e7e6e6;
+  margin: 0;
+}
+
+h1 {
+  color: darkgreen;
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.rate {
+  color: darkgreen;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.currency select,
+input,
+button {
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid grey;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.currency select,
+input,
+button:focus {
+  outline: 0;
+}
+.currency select,
+input {
+  background-color: rgb(246, 245, 245);
+}
+
+.swapContainer button {
+  background-color: darkgreen;
+  color: white;
+  font-size: 2rem;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.swapContainer button:hover {
+  color: darkgreen;
+  border: 0.2rem solid darkgreen;
+  background-color: white;
+}
+.rates{
+  width: 40rem;
+  font-size: 1.5rem;
+}
+ .rates table{
+  border-collapse: collapse;
+  /* border: 2px solid black; */
+
+  width: 100%;
+}
+ tr{
+  padding: 1rem;
+  width: 4rem;
+  /* border: 2px solid black; */
+  
+
+} 
+tr:nth-child(even){
+  background-color: rgb(250, 251, 250);
+}
+th,td{
+  padding: 1rem;
+  /* border: 2px solid black; */
+
+}

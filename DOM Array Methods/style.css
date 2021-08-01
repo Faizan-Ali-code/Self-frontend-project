@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+     font-size: 62.5%;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #e6e4e4;
+    
+
+    
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+    /* border: .2rem solid black; */
+    margin: 0 auto;
+}
+h1{
+    /* display: grid;
+    place-items: center; */
+    text-align: center;
+    font-size: 3rem;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin-right:2rem ;
+    border-right: .2rem solid grey;
+}
+
+aside button{
+    padding: 1rem;
+    margin: 1rem 2rem;
+    border: .2rem solid grey;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+    cursor: pointer;
+
+}
+
+main{
+  
+    flex: 1;
+    /* width: 10rem; */
+}
+
+h2{
+    margin: 1rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: .2rem solid black;
+    display: flex;
+    justify-content: space-between;
+}    
+        
+h3{
+    margin: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white; 
+    padding: 1rem;
+
+}        
+.user{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* width: 40rem; */
+    
+}        
+    
+    
